@@ -6,7 +6,7 @@
 # use transmission-remote to get torrent list from transmission-remote list
 # use sed to delete first / last line of output, and remove leading spaces
 # use cut to get first field from each line
-TORRENTLIST=`transmission-remote --list | sed -e '1d;$d;s/^ *//' | cut --only-delimited --delimiter=" "  --fields=1`
+TORRENTLIST=`transmission-remote --list | sed -e '1d;$d;s/^ *//' | cut -d " "  -f 1`
 
 SOURCEDIR='/incomplete'
 MOVEDIR='/downloads'
