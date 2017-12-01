@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # the folder to move completed downloads to
 
 # port, username, password
