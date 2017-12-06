@@ -22,7 +22,6 @@ do
     if [ "$STATE_STOPPED" ]; then
         # move the files and remove the torrent from Transmission
       NAME=`transmission-remote --torrent $TORRENTID --info | grep "Name:"`
-      /storage/scripts/push.sh "Download finished" "$NAME"  
       if [ "$FROM_DOWNLOADING" ]; then
         transmission-remote --torrent $TORRENTID --move $MOVEDIR
         chown -R $DISTOWNER $MOVEDIR
