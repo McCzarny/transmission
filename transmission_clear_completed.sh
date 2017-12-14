@@ -12,6 +12,10 @@ SOURCEDIR='/incomplete'
 MOVEDIR='/incomplete/downloads'
 DISTOWNER='root:root'
 
+if [ ! -d $MOVEDIR ]; then
+    mkdir $MOVEDIR
+fi
+
 # for each torrent in the list
 for TORRENTID in $TORRENTLIST
 do
