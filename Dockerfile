@@ -8,3 +8,4 @@ ADD ./transmission_clear_completed.sh /etc/periodic/hourly/transmission_clear_co
 RUN chmod +x  /etc/periodic/hourly/transmission_clear_completed
 ADD ./settings.json /settings.json
 ADD ./start.sh /start.sh
+RUN chmod u+x  /start.sh
