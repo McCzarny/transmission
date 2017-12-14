@@ -9,7 +9,7 @@
 TORRENTLIST=`transmission-remote --list | sed -e '1d;$d;s/^ *//' | cut -d " "  -f 1`
 
 SOURCEDIR='/incomplete'
-MOVEDIR='/downloads'
+MOVEDIR='/incomplete/downloads'
 DISTOWNER='root:root'
 
 # for each torrent in the list
